@@ -1,0 +1,17 @@
+{
+"manifest_version": 3,
+    "name": "itsJaquaysing",
+    "description": "A Google Chrome Extension to correctly name the Dungeon Creation technique of Jennell Jaquays",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
